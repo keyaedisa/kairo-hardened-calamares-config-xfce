@@ -1,19 +1,19 @@
-- name: "XeroLinux Hidden"
+- name: "kairoAlpha Hidden"
   description: "Essential Requirements"
   critical: false
   hidden: true
   selected: true
   packages:
     - xfce-config
-- name: "Stock Arch Kernel"
-  description: "Newer version than ISO"
+- name: "Hardened Arch Kernel"
+  description: "security? maybe"
   critical: false
   hidden: false
   selected: true
   expanded: false
   packages:
-    - linux
-    - linux-headers
+    - linux-hardened
+    - linux-hardened-headers
 - name: "Processor U-Code"
   description: "Select Your CPU's Microcode"
   critical: true
