@@ -21,62 +21,6 @@
         packages:
            - ifuse
            - shotwell
-- name: "Audio & Music Tools"
-  description: "Audio Players, Converters & Editors"
-  hidden: false
-  selected: false
-  critical: false
-  subgroups:
-      - name: "Audio Players"
-        description: "Cherrypicked Audio Players"
-        selected: false
-        packages:
-           - amarok
-           - audacious
-           - audacious-plugins
-           - elisa
-           - gmusicbrowser
-           - olivia
-           - radiotray
-           - sayonara-player
-           - spotify-adblock-git
-           - tauon-music-box
-      - name: "Audio Editors"
-        description: "Selection of Audio Editors"
-        selected: false
-        packages:
-           - ardour
-           - audacity
-           - glada
-           - kwave
-           - lmms
-      - name: "Audio Converters"
-        description: "Few good Audio Converters"
-        selected: false
-        packages:
-           - ciano
-           - gnac
-           - soundconverter
-           - transmageddon
-      - name: "Other Audio Tools"
-        description: "Various Other Audio Tools"
-        selected: false
-        packages:
-           - easytag
-           - element
-           - picard
-           - rhythmbox
-- name: "Benchmarking Tools"
-  description: "Test you Machine for Gaming"
-  critical: false
-  hidden: false
-  selected: false
-  expanded: false
-  packages:
-    - blender-benchmark
-    - geekbench
-    - gputest
-    - phoronix-test-suite
 - name: "Dev Studio Tools"
   description: "Some Useful Dev Tools"
   hidden: false
@@ -131,6 +75,7 @@
   selected: false
   expanded: false
   packages:
+    - gnome-disk-utility
     - brasero
     - baobab
     - etcher-bin
@@ -138,41 +83,6 @@
     - rpi-imager
     - ventoy-bin
     - woeusb-gui
-- name: "Extra Fonts"
-  description: "Handpicked Fonts"
-  critical: false
-  hidden: false
-  selected: false
-  expanded: false
-  packages:
-    - ttf-anonymous-pro
-    - ttf-bitstream-vera
-    - ttf-liberation
-    - ttf-carlito
-    - ttf-cormorant
-    - ttf-croscore
-    - ttf-eurof
-    - ttf-font-awesome
-    - ttf-hactor
-    - ttf-ibm-plex
-    - ttf-jetbrains-mono
-    - ttf-monofur
-    - ttf-ms-fonts
-    - ttf-nerd-fonts-symbols
-- name: "Graphics Studio"
-  description: "Some Graphic Apps"
-  critical: false
-  hidden: false
-  selected: false
-  expanded: false
-  packages:
-    - blender
-    - darktable
-    - digikam
-    - flameshot    
-    - gimp
-    - inkscape
-    - krita
 - name: "Internet"
   description: "Internet & Social Tools"
   hidden: false
@@ -184,30 +94,9 @@
         selected: false
         packages:
            - brave-bin
-           - chromium
-           - epiphany
-           - falkon
-           - librewolf-bin
-           - netsurf
-           - opera
-           - otter-browser
-           - seamonkey
-           - tangram
            - tor-browser
-           - vivaldi
-           - vivaldi-ffmpeg-codecs
            - webapp-manager
-      - name: "E-mail Clients"
-        description: "Various Email Clients"
-        selected: false
-        packages:
-           - claws-mail
-           - evolution
-           - geary
-           - kmail
-           - mailspring
-           - thunderbird
-           - trojita
+           - firefox
       - name: "Social Clients"
         description: "Social Video & Chat Clients"
         selected: false
@@ -228,7 +117,6 @@
           - telegram-desktop
           - tweetdeck-desktop
           - wire-desktop
-          - zoom
       - name: "Download Managers"
         description: "Various Download & Torrent Managers"
         selected: false
@@ -283,6 +171,7 @@
     - flatpak
     - gnome-software
     - octopi
+    - yay-bin
 - name: "Password Managers"
   description: "Securely Store & Manage Passwords"
   critical: false
@@ -334,22 +223,6 @@
            - konsave
            - variety
            - xscreensaver
-      - name: "Arc Theme"
-        description: "Install Arc Theme"
-        selected: false
-        packages:
-          - arc-darkest-theme-git
-          - arc-firefox-theme-git
-          - arc-gtk-theme
-          - arc-icon-theme
-          - vlc-arc-dark-git
-      - name: "Sweet Theme"
-        description: "Install Sweet Theme"
-        selected: false
-        packages:
-          - sweet-gtk-theme
-          - sweet-gtk-theme-dark
-          - beautyline
 - name: "Utilities"
   description: "Various Useful Utilities"
   hidden: false
@@ -399,49 +272,6 @@
            - solaar
            - warpinator
            - wireshark-qt
-- name: "Video Tools"
-  description: "Video Players, Editors, Converters & Other"
-  hidden: false
-  selected: false
-  critical: false
-  subgroups:
-      - name: "Video Players"
-        description: "Selection of Video Players"
-        selected: false
-        packages:
-           - baka-mplayer
-           - hypnotix
-           - mpv
-           - plex-media-player
-           - plex-media-server
-           - stremio
-           - vlc
-      - name: "Video Editors"
-        description: "Selection of Video Capture & Editors"
-        selected: false
-        packages:
-           - kdenlive
-           - obs-studio
-           - openshot
-           - pitivi
-           - shotcut
-           - simplescreenrecorder
-      - name: "Video Converters"
-        description: "Selection of Video Converters"
-        selected: false
-        packages:
-          - handbrake
-          - makemkv
-          - mkvtoolnix-gui
-          - mystiq
-      - name: "Other Video Tools"
-        description: "Various other Video Tools"
-        selected: false
-        packages:
-          - filebot
-          - guvcview
-          - mediainfo-gui
-          - yt-dlp
 - name: "Virtualbox"
   description: "Custom Kernel vBox+DKMS Else vBox+Arch"
   critical: false
